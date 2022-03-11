@@ -55,7 +55,7 @@ Now you should be able to execute `./defi-cli` in your Terminal.
 
 Download the latest Windows release.
 
-https://github.com/jayohf/defi-cli/releases/latest/download/defi-cli-win-x64
+https://github.com/jayohf/defi-cli/releases/latest/download/defi-cli-win-x64.exe
 
 After downloading, you can optionally rename it from "defi-cli-win-64" to defi-cli. It will work either way.
 
