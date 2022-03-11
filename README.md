@@ -61,6 +61,12 @@ After downloading, you can optionally rename it from "defi-cli-win-64" to defi-c
 
 # Quickstart
 
+### Interactive Mode
+
+Simply running defi-cli by double clicking will start it in interactive mode.
+
+### CLI Mode
+
 In Terminal (Linux/macOS) or CMD prompt (Windows) change your directory to where you downloaded defi-cli.
 
 ` cd ~/Downloads`
@@ -72,6 +78,8 @@ Configure your wallet by using the CLI or by editing the ~/Documents/defi-cli-co
 Start defi-cli.
 
 `./defi-cli start`
+
+I'm actively working on adding more cli commands. See the full list here: [Commands](#commands)
 
 # Supported Blockchains
 
