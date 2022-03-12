@@ -175,11 +175,11 @@ const nodeSchema = {
     properties: {
       websockets: {
         type: 'string',
-        default: 'wss://api.avax.network/ext/bc/C/ws',
+        default: 'https://rpc.ankr.com/avalanche',
       },
       rpc: {
         type: 'string',
-        default: 'https://api.avax.network/ext/bc/C/rpc',
+        default: 'https://rpc.ankr.com/avalanche',
       },
     },
   },
@@ -188,6 +188,11 @@ const nodeSchema = {
 export const nodeConfig = new Conf({
   schema: nodeSchema,
   configName: 'nodeConfig',
+  migrations: {
+		'0.3.2': (store: { set: (arg0: string, arg1: string) => void; }) => {
+			store.set('avax.websockets', 'https://rpc.ankr.com/avalanche');
+    },
+	},
   // @ts-expect-error ts-migrate(2554) FIXME: Expected 1 arguments, but got 0.
   cwd: getCoreLocation(),
 });

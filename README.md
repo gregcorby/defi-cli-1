@@ -297,7 +297,7 @@ DESCRIPTION
   manage configuration
 ```
 
-_See code: [dist/commands/config.ts](https://github.com/jayohf/defi-cli/blob/v0.2.0/dist/commands/config.ts)_
+_See code: [dist/commands/config.ts](https://github.com/jayohf/defi-cli/blob/v0.3.2/dist/commands/config.ts)_
 
 ## `defi-cli help [COMMAND]`
 
@@ -317,7 +317,7 @@ DESCRIPTION
   Display help for defi-cli.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.11/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.12/src/commands/help.ts)_
 
 ## `defi-cli nodes [KEY] [VALUE]`
 
@@ -340,7 +340,7 @@ DESCRIPTION
   manage EVM node configuration
 ```
 
-_See code: [dist/commands/nodes.ts](https://github.com/jayohf/defi-cli/blob/v0.2.0/dist/commands/nodes.ts)_
+_See code: [dist/commands/nodes.ts](https://github.com/jayohf/defi-cli/blob/v0.3.2/dist/commands/nodes.ts)_
 
 ## `defi-cli start`
 
@@ -357,7 +357,7 @@ EXAMPLES
   $ defi-cli start
 ```
 
-_See code: [dist/commands/start.ts](https://github.com/jayohf/defi-cli/blob/v0.2.0/dist/commands/start.ts)_
+_See code: [dist/commands/start.ts](https://github.com/jayohf/defi-cli/blob/v0.3.2/dist/commands/start.ts)_
 
 ## `defi-cli wallet [KEY] [VALUE]`
 
@@ -379,5 +379,5 @@ DESCRIPTION
   add or remove wallet
 ```
 
-_See code: [dist/commands/wallet.ts](https://github.com/jayohf/defi-cli/blob/v0.2.0/dist/commands/wallet.ts)_
+_See code: [dist/commands/wallet.ts](https://github.com/jayohf/defi-cli/blob/v0.3.2/dist/commands/wallet.ts)_
 <!-- commandsstop -->
