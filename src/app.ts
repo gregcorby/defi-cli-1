@@ -85,7 +85,7 @@ import {config, walletConfig} from './config/index'
 
 const Package = {
   name: 'defi-cli',
-  version: '0.3.1',
+  version: '0.3.2',
 }
 
 let settings: any

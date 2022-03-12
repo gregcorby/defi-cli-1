@@ -57,7 +57,7 @@ export const initializeWeb3 = (chain: any) => {
 
     // eslint-disable-next-line unicorn/numeric-separators-style
     case 43114:
-      primaryNode = new Web3(new Web3.providers.WebsocketProvider(nodeConfig.get('avax.websockets'), wsConfig))
+      primaryNode = buildWeb3Connection(nodeConfig.get('avax.websockets'), wsConfig, rpcConfig)
       secondaryNode = new Web3(new Web3.providers.HttpProvider(nodeConfig.get('avax.rpc'), rpcConfig))
       break
 
@@ -82,12 +82,12 @@ export const initializeWeb3 = (chain: any) => {
   })
 }
 
-// const buildWeb3Connection = (evmNode: any, wsConfig: any, rpcConfig: any) => {
-//     if (evmNode.toLowerCase().startsWith('https')) return new Web3(new Web3.providers.HttpProvider(evmNode, rpcConfig));
-//     else {
-//         if (evmNode.toLowerCase().startsWith('wss')) return new Web3(new Web3.providers.WebsocketProvider(evmNode, wsConfig));
-//         else throw 'EOFError';
-//     }
-// };
+const buildWeb3Connection = (evmNode: any, wsConfig: any, rpcConfig: any) => {
+    if (evmNode.toLowerCase().startsWith('https')) return new Web3(new Web3.providers.HttpProvider(evmNode, rpcConfig));
+    else {
+        if (evmNode.toLowerCase().startsWith('wss')) return new Web3(new Web3.providers.WebsocketProvider(evmNode, wsConfig));
+        else throw 'EOFError';
+    }
+};
 
 const connectFailedString = (G: any) => 'Failed to connect to ' + G.toUpperCase() + ' node.'
