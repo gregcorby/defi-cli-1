@@ -31,7 +31,7 @@ Binaries are built using GitHub Actions and are available for Linux (x64, arm), 
 
 Open Terminal.
 
-`curl https://github.com/jayohf/defi-cli/releases/latest/download/defi-cli-linux-x64 -o defi-cli`
+`curl -L https://github.com/jayohf/defi-cli/releases/latest/download/defi-cli-linux-x64 -o defi-cli`
 
 `chmod +x defi-cli`
 
@@ -39,7 +39,7 @@ Open Terminal.
 
 Open Terminal.
 
-`curl https://github.com/jayohf/defi-cli/releases/latest/download/defi-cli-macos-x64 -o defi-cli`
+`curl -L https://github.com/jayohf/defi-cli/releases/latest/download/defi-cli-macos-x64 -o defi-cli`
 
 `chmod +x defi-cli`
 
