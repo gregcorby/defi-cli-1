@@ -101,9 +101,7 @@ export async function start() {
     printErrorHeading('DISCLAIMER')
     console.log('All investment strategies and investments involve risk of loss.')
     console.log('By using DEFI-CLI, you agree to accept all liabilities, and that')
-    console.log('no claims can be made against the developers.')
-    console.log('\nDEFI-CLI is ' + chalk.yellow('FREE') + ' to download.')
-    console.log('If you paid someone to download DEFI-CLI, you have been ' + chalk.red('SCAMMED') + '!')
+    console.log('no claims can be made against the developer.')
 
     agreeDisclaimer().then(() => {
       initializeFiles()
